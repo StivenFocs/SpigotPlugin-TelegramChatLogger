@@ -12,6 +12,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -160,6 +161,7 @@ public class Vars {
                     plugin.getLogger().info(url.toString());
                     plugin.getLogger().info(output);
                 }
+            } catch (NoSuchFileException ignored) {
             } catch (UnknownHostException ignored) {
             } catch (Exception ex) {
                 plugin.getLogger().severe("An exception occurred while trying to send a log message on telegram");
