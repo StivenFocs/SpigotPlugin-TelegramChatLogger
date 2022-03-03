@@ -1,0 +1,11 @@
+name: TelegramChatLogger
+version: 1.1.1-Release
+main: cloud.stivenfocs.TelegramChatLogger.Loader
+authors: [StivenFocs]
+description: "This plugin provide a simple tool for server staff lie moderators to log and read the ingame chat from a private liked telegram group or channel."
+commands:
+    telegramchatlogger:
+        aliases: [tglogger]
+permissions:
+    tglogger.admin:
+        default: op
