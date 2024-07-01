@@ -139,7 +139,7 @@ public class Vars {
     ///////////////////////////////
 
     public static void sendLog(String text, Boolean silenced) {
-        Bukkit.getScheduler().runTask(plugin, () -> {
+        Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
             try {
                 String text_ = URLEncoder.encode(text, StandardCharsets.UTF_8.toString());
                 URL url;

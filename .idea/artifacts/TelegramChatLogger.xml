@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TelegramChatLogger">
+    <output-path>$PROJECT_DIR$/out/artifacts/TelegramChatLogger</output-path>
+    <root id="archive" name="TelegramChatLogger.jar">
+      <element id="module-output" name="SpigotPlugin-TelegramChatLogger" />
+    </root>
+  </artifact>
+</component>
